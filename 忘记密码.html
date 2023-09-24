@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>找回密码</title>
+    <link rel="stylesheet" href="校庆CSS.css">
+    <link rel="stylesheet" href="登录后.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap" rel="stylesheet">
+    <style>
+        body {
+         background: linear-gradient(to bottom right, rgb(114, 135, 254), rgb(130, 88, 186));
+        }
+    </style>
+</head>
+<body>
+    <header>
+        
+    </header>
+    <main>
+        <div class="settingpart">
+            
+                <div class="editaccountforget1" id="editaccountforget1">
+                    <h2>身份验证</h2>
+                    <p>为保证帐号安全，需进行身份验证<br>身份验证成功后方可进行下一步操作</p>
+                    <span class="emptyerr" id="errmsg" >请检查账号或手机号是否正确</span>
+                    <input type="text" id="username" placeholder="请输入账号" class="input" onBlur="return checkforget()"><br>
+                    <span class="emptyerr" id="eptusername">账号不得为空</span>
+                    <input type="password" id="phonenum" placeholder="请输入手机号" class="input" onBlur="return checkforget()"><br>
+                    <span class="emptyerr" id="eptphonenum">手机号不得为空</span><br>
+                    <button class="submitbutton1" onClick="return toeditaccountforget()">确认</button>
+                    <button class="submitbutton1" onClick="window.location.href='登录.html'">返回</button>
+                </div>
+                <div class="editaccountforget2" id="editaccountforget2">
+                    <h2>更新您的密码</h2>
+                    <p>你已经通过了身份验证，<br>请输入新的密码</p>
+                    <input type="password" id="newpaswd1" placeholder="输入新的密码" class="input" onBlur="checkpaswdforget()"><br>
+                    <span class="emptyerr" id="errpaswd2">密码必须为6-20位</span>
+                    <span class="emptyerr" id="errpaswd5">两次密码输入不一致</span>
+                    <input type="password" id="newpaswd2" placeholder="再次输入新的密码" class="input" onBlur="checkpaswdforget()"><br>
+                    <span class="emptyerr" id="errpaswd3">密码必须为6-20位</span>
+                    <button class="submitbutton1" onClick="submitpaswdforget()">确认</button>
+                    <button class="submitbutton1" onClick="returnpage1()">返回</button>
+                </div>
+        </div>
+    </main>
+    <script src="md5.js"></script>
+    <script type="text/javascript" src="登录后.js"></script>
+    <script type="text/javascript" src="登录.js"></script>
+</body>
+</html>

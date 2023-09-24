@@ -1,0 +1,643 @@
+.left-container {
+    width: 190px;
+
+    flex-shrink: 0;
+    z-index: 50;
+}
+
+.left-container--sticky {
+    margin-top: 35px;
+    width: auto;
+    margin-bottom: 8px;
+    overflow-y: auto;
+    background-color: #fbf6f2;;
+}
+
+.left-container-block{
+    border-radius: 10px;
+    border: 1px solid hsl(0, 76%, 71%);
+    
+    margin: 10px 10px 10px 10px;
+}
+.announcement_block{
+    width: 90%;
+    height: 80px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.announcement {
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(26, 26, 26, .1);
+    font-size: 15px;
+    border: 1px solid hsl(0, 76%, 71%);
+    background-color:  #fbf6f2;
+}
+
+.announcement_content{
+    margin-left: 20px;
+}
+.announcement-Title{
+    padding: 7px;
+    border: 1px solid hsl(202, 65%, 84%);
+    box-shadow: 0 1px 3px rgba(26, 26, 26, .1);
+}
+
+.announcementUl {
+    display: block;
+    margin: 0px;
+    padding: 20px;
+    list-style-type: disc;
+}
+.announcement_head{
+    color: black;
+    margin-top: -10px;
+
+}
+.data{
+    border-radius: 5px;
+    width: 80px;
+    height: 20px;
+    background: #b3294f;
+    color: #fff;
+    padding-left: 5px;
+    font-size: 0.8rem;
+}
+.gradt {
+    font-size: 25px;
+    color: #222222;
+    font-weight: bold;
+    font-family: "Mouse Memoirs";
+    position: relative;
+    padding-bottom: 0.14rem;
+    margin-bottom: 0.16rem;
+}
+.gradt::before{
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 3px;
+    background: #cd4b65;
+    bottom: -10px;
+    left: 0;
+}
+
+.bt_content {
+    text-decoration: none;
+    width: 130px;
+    height: 35px;
+    line-height: .34rem;
+    border: 1px solid rgba(255,255,255,.4);
+    padding: 0 0.2rem;
+    border-radius: 0.8rem;
+    background: rgba(255,255,255,.1);
+    color: #fff;
+    transition: .3s;
+    align-content: center;
+}
+
+.bt_content:hover{
+    background: rgba(255, 255, 255, 0.039);
+}
+
+.bt_login {
+    text-decoration: none;
+    width: 100px;
+    height: 35px;
+    line-height: .34rem;
+    border: 1px solid rgba(255,255,255,.4);
+    padding: 0 0.2rem;
+    border-radius: 0.8rem;
+    background: rgba(255,255,255,.1);
+    color: #fff;
+    transition: .3s;
+    align-content: center;
+}
+
+.bt_login:hover{
+    background: rgba(255, 255, 255, 0.039);
+}
+
+.bt_login img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 4px;
+    margin-right: 5px;
+    width: 30px;
+    height: 30px;
+}
+
+.bt_content img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 4px;
+    margin-right: 5px;
+    width: 30px;
+    height: 30px;
+}
+body {
+    display: block;
+    margin: 0;
+    color: #121212;
+    font-family: BlinkMacSystemFont, sans-serif;
+    font-size: 15px;
+    /*background: #f6f6f6*/;
+    background-image: url("https://xq40.szu.edu.cn/images/ggbg.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+header {
+    position: relative;
+    z-index: 100;
+    display: block;
+    overflow: hidden;
+    
+    box-shadow: 0 1px 3px rgba(26, 26, 26, .1);
+
+}
+
+button {
+    opacity: 0.7;
+}
+
+button:hover{
+    color: cornsilk;
+    opacity: 1.0;
+    cursor: pointer;
+}
+
+.AppHeader-inner {
+    position: relative;
+    display: flex;
+    width: 1156px;
+    height: 70px;
+    padding: 0 16px;
+    margin: 0 auto;
+    align-items: center;
+    box-shadow: 0 1px 3px rgba(26, 26, 26, .1);
+}
+
+.Sticky {
+    position: fixed;
+    display: flex;
+    width: 1156px;
+    height: 70px;
+    padding: 0 85px;
+    margin: 0 35px;
+    align-items: center;
+    background-color: #FFFFFF;
+    background-image: url("https://www.szu.edu.cn/images/footerback_03.jpg");
+}
+
+.AppHeader-nav {
+    display: flex;
+    height: 30px;
+    margin-right: 18px;
+    margin-left: 27px;
+    justify-content: space-between;
+    color: #999;
+}
+
+.AppHeader-navItem {
+    padding: 0 15px;
+    font-size: 15px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+.AppHeader-navItem.is-active {
+    color: #ffb67e;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.SearchBar {
+    position: relative;
+    z-index: 104;
+    display: flex;
+    width: 400px;
+    flex-grow: 0.3;
+}
+
+
+.SearchBar-tool {
+    position: relative;
+    z-index: 104;
+    overflow: hidden;
+    height: 100%;
+    width: 80%;
+}
+
+.Popover {
+    position: relative;
+    width: 100%;
+
+    align-items: center;
+    border: 1px solid #ebebeb;
+    display: flex;
+    font-size: 14px;
+    height: 34px;
+    padding: 4px 2px;
+
+    background: #f6f6f6;
+
+    border-radius: 999px;
+}
+
+.Input {
+    border: none;
+    height: 24px;
+    line-height: 24px;
+    width: 75%;
+    background: transparent;
+}
+
+.SearchButton {
+    display: inline-block;
+    padding: 0 16px;
+    margin: auto;
+    font-size: 14px;
+    line-height: 32px;
+    color: #8590a6;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+.SearchButton:active {
+    transform: scale(0.95);
+}
+
+.AskButton {
+    z-index: 103;
+    padding: 0 14px;
+    margin-left: 16px;
+    line-height: 30px;
+    color: white;
+    border-color: #0077e6;
+    background-color: #00e;
+    border-radius: 10px;
+}
+
+.AskButton:active {
+    transform: scale(0.95);
+}
+
+.AppHeader-userInfo {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center
+}
+
+.Login {
+    width: 15%;
+    padding: 10px;
+    color: white;
+    background-color: #00e;
+    border: none;
+}
+
+.AppHeader-userInfo label{
+    color:white;
+}
+
+.Main {
+    display: block;
+    margin: 75px;
+}
+
+.container {
+    max-width: 1264px;
+    width: 100%;
+    background: none;
+    display: flex;
+    flex: 1 0 auto;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+
+.liis-active {
+    padding: 5px 30px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-links {
+    padding: 0;
+    margin: 50px 0 12px;
+    text-align: center;
+    list-style: none;
+}
+
+.needLogin{
+    display: block;
+    margin: 50px 2px;
+    padding: 20px 2px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+.content {
+    max-width: 1100px;
+    width: calc(100% - 164px);
+    margin: 10px;
+    padding: 24px;
+    border-radius: 0;
+    border: 0 solid white;
+    border-left-width: 1px;
+    box-sizing: border-box;
+}
+
+.mainBar {
+    width: calc(100% - 300px - 24px);
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+.question {
+    width: auto;
+    float: none;
+    clear: both;
+    margin-bottom: 20px;
+    margin-left: 7px;
+    padding: 10px;
+    border-top: 1px solid black;
+    box-shadow: 0 1px 3px rgba(26, 26, 26, .1);
+}
+
+.questionImg{
+    max-height:100%;
+    max-width:100%;
+}
+
+.questionItem {
+    background:  #fbf6f2;
+    position: relative;
+    border-radius: 0;
+    outline: none;
+    padding: 20px;
+}
+.questionItem::after{
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 1px;
+    background: rgb(193, 112, 112);
+    bottom: 8px;
+}
+
+.questionItem-Title {
+    margin-bottom: -4px;
+    margin-top: -4px;
+    color: #121212;
+    line-height: 1.6;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.richContent {
+    line-height: 1.67;
+}
+
+.richContent-inner {
+    overflow: hidden;
+    /*max-height: 100px;*/
+    margin-bottom: -4px;
+    margin-top: 9px;
+}
+
+.richContent-inner > span {
+    display: block;
+    line-height: 1.6;
+}
+
+.MoreButton {
+    height: auto;
+    display: inline-block;
+    margin-left: 4px;
+    padding: 0;
+    text-align: center;
+    color: #175199;
+    font-size: 14px;
+    border: none;
+    background: none;
+}
+
+.MoreButton:hover {
+    color: blue;
+}
+
+.questionItem-action {
+    clear: both;
+    display: flex;
+    margin: 0 -20px -10px;
+    padding: 10px 20px;
+    align-items: center;
+    color: #646464;
+    background: #fff;
+}
+
+.voteButton {
+    display: inline-block;
+    margin: 3px;
+    padding: 0 12px;
+    text-align: center;
+    line-height: 30px;
+    color: #b3294f;
+    font-size: 14px;
+    border: 1px solid;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.voteButton:hover {
+    color: blue;
+    background-color: rgb(151, 150, 166);
+}
+
+.voteButton:active {
+    transform: scale(0.95);
+}
+
+.discussButton {
+    height: auto;
+    margin-left: 50px;
+    padding: 0;
+    font-size: 14px;
+    font-weight: bold;
+    color: #a751b8;;
+    background: none;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+.discussButton:hover {
+    color: blue;
+}
+
+.pages {
+    float: left;
+    display: flex;
+    margin: 0px 20px;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.pageItem {
+    background-color: white;
+    border: 1px solid;
+    color: black;
+    border-radius: 3px;
+    font-size: 13px;
+    line-height: 1.5;
+    padding: 0 8px;
+}
+
+.pages .is--selected {
+    color: white;
+    background-color: hsl(27, 90%, 55%);
+}
+
+
+.sideBar {
+    float: left;
+    width: 300px;
+    margin: 0 0 5px 20px;
+}
+
+
+
+.news{
+    position: relative;
+    border: 1px solid hsl(210,8%,85%);
+    border-radius: 3px;
+    font-size: 13px;
+    background-color: white;
+}
+
+
+
+.footer{
+    display: block;
+    background-image: url("https://xq40.szu.edu.cn/images/ftbg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-top: 0;
+    color: #FFFFFF;
+    padding-top: 0;
+    padding-bottom: 0;
+    box-sizing: border-box;
+}
+
+.site-footer--container{
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 1264px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 32px 12px 12px 12px;
+}
+
+.site-footer--nav{
+    display: flex;
+    flex: 2 1 auto;
+    flex-wrap: wrap;
+}
+
+.site-footer-col{
+    /*flex: 1 0 auto;*/
+    padding: 0px 24px 24px 80px;
+}
+
+.site-footer--nav .timg {
+    position: absolute;
+    height: 2.14rem;
+    top: 50%;
+    margin-top: -1.07rem;
+    pointer-events: none;
+    max-width: 45%;
+}
+
+.site-footer--nav .timg1 {
+    left: 0.2rem;
+}
+.site-footer--nav .timg2 {
+    right: 0.2rem;
+}
+
+
+div {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+form {
+    display: block;
+    margin-top: 0;
+}
+
+h2 {
+    display: block;
+    margin: 0;
+}
+
+li {
+    margin: 12px 0;
+    padding-left: 3px;
+    padding-right: 12px;
+}
+
+#logoFont{
+    font-family: "Mouse Memoirs";
+    font-size: 50px;
+}
+
+.logoFontS{
+    font-family: "Mouse Memoirs";
+    font-size: 25px;
+}
+
+.questionItem{
+    box-shadow: 0 3px 6px rgba(140,149,159,0.15);
+    /*border: 1mm solid rgba(238, 239, 232, 0.6);*/
+    border-bottom: 1px solid #f0f2f7;
+    /*margin-bottom: 0px;*/
+}
+
+.reply{
+    padding-left: 40px;
+}
+
+.replyContent{
+    display: block;
+}
+
+
+/* latin-ext */
+@font-face {
+    font-family: 'Mouse Memoirs';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/mousememoirs/v14/t5tmIRoSNJ-PH0WNNgDYxdSb3TDPr6OH.woff2) format('woff2');
+    unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Mouse Memoirs';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/mousememoirs/v14/t5tmIRoSNJ-PH0WNNgDYxdSb3T7Prw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }

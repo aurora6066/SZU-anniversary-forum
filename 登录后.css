@@ -1,0 +1,381 @@
+.userinfo{
+    height:200px;
+    width:118px;
+}
+
+.imgButton {
+    margin-top:80px;
+    margin-left:60px;
+    z-index: 10000;
+    width: 40px;
+    height:40px;
+    color: white;
+    border: none;
+}
+
+.secondnavi{
+    z-index:9999;
+    height:156px;
+    width:118px;
+    display:none;
+    background-color: white;
+    color:black;
+}
+
+.userinfo ul{
+    margin:0px;
+    position: absolute;
+}
+
+.userinfo ul li{
+    list-style:none;
+}
+
+.userinfo label{
+    color:black;
+}
+
+.secondnavi-container{
+    text-align:center;
+    line-height:38px;
+    z-index:1;
+    height:38px;
+    width:118px;
+    border-bottom:1px solid #ebebeb; 
+}
+
+.secondnavi-container:hover {
+    background-color: rgb(110, 170, 110);
+}
+.mainbackground1{
+    line-height:30vh;
+    margin-top:10vh;
+    height:15vh;
+    width:60%;
+    margin-left:20%;
+    background-color: gray;
+}
+
+.mainbackground2{
+    height:15vh;
+    width:60%;
+    margin-left:20%;
+    background-color:white;
+}
+
+.mainbackground2 h2{
+    font-size:18px;
+    line-height:10vh;
+    margin-left:180px;
+    float:left;
+}
+
+.headimg{
+    position:absolute;
+    z-index:2;
+    margin-top:7.5vh;
+    margin-left:22%;
+    line-height:15vh;
+    text-align:center;
+    color:white;
+    height:15vh;
+    width:15vh;
+    border-radius: 5px; 
+    float:left;
+}
+
+.buttonground{
+    width:20%;
+    float:right;
+}
+
+.infobutton{
+    margin-top:40px;
+    z-index: 10000;
+    width: 100px;
+    height:40px;
+    color: #00e;
+    background-color: white;
+    border: none;
+    border-radius: 5px; 
+    border:1px solid #00e;
+}
+
+.displaypart{
+    margin-top:20px;
+    margin-bottom:20px;
+    padding-bottom:20px;
+    height:58vh;
+    width:60%;
+    margin-left:20%;
+    background-color:white;
+    display:block;
+}
+
+.displaypart-container{
+    float:left;
+    height:10vh;
+    width:100%;
+    background-color:white;
+    border-bottom:1px solid #ebebeb; 
+    display:block;
+}
+
+.displaypart-container h2{
+    font-size:15px;
+    line-height:10vh;
+    margin-left:25px;
+}
+
+.displaypart-containerinnerleft{
+    width:20%;
+    height:10vh; 
+    float:left;
+    background-color:white;
+}
+
+.displaypart-containerinner{
+    float:left;
+    background-color:white;
+    width:80%;
+    height:10vh; 
+}
+
+.displaypart-containerinner h3{
+    font-size:15px;
+}
+
+.displaypart-containerinnerlast{
+    float:left;
+    background-color:white;
+    width:60%;
+    height:10vh; 
+}
+
+.editpart{
+    margin-top:20px;
+    margin-bottom:20px;
+    height:60vh;
+    width:60%;
+    margin-left:20%;
+    background-color:white;
+    display:none;
+}
+
+.editpartinput{
+    width: 400px;            
+    height: 40px;            
+    color: black;                      
+    text-indent: 2em;                      
+    margin-top:15px;  
+    border:0;                   
+}
+
+.displaypart-containerinnerright{
+    float:left;
+    background-color:white;
+    width:20%;
+    height:10vh; 
+}
+
+.submitbutton{
+    float:left;
+    text-align:center;
+    width: 100px;            
+    height: 40px;            
+    color: white;            
+    background: #056de8;                      
+    border-radius: 5px;            
+    margin-top:15px;                     
+    border:0px;      
+}
+
+.submitbutton1{
+    float:left;
+    text-align:center;
+    width: 100px;            
+    height: 40px;            
+    color: white;            
+    background: #056de8;                      
+    border-radius: 5px;            
+    margin-top:15px;  
+    margin-left:70px;                   
+    border:0px;      
+}
+
+.submitbutton2{
+    float:left;
+    text-align:center;
+    width: 100px;            
+    height: 40px;            
+    color: white;            
+    background: #056de8;                      
+    border-radius: 5px;            
+    margin-top:80px;                   
+    border:0px;      
+}
+
+.settingpart{
+    margin-top:10vh;
+    margin-left:20%;
+    margin-bottom:10px;
+    height:70vh;
+    width:65%;
+    display:block;
+}
+
+.settingmainpart{
+    float:left;
+    background:white;
+    width:70%;
+    height:70vh;
+}
+
+.settingmainpart-container{
+    width:100%;
+    height:33.3%;
+    border-bottom:1px solid #ebebeb;
+}
+
+.settingmainpart-container h2{
+    padding-left:50px;
+    padding-top:20px;
+}
+
+.settingmainpart-container p{
+    padding-left:60px;
+    padding-top:5px;
+    color:#8590a6;
+}
+
+.settingnote{
+    float:left;
+    background:white;
+    margin-left:1%;
+    width:28%;
+    height:50vh;
+}
+
+.settingmainpart-right{
+    float:left;
+    width:20%;
+    height:100%;
+}
+
+.settingmainpart-left{
+    float:left;
+    width:80%;
+    height:100%;
+}
+
+.editaccount{
+    position:absolute;
+    z-index:10000;
+    margin-left:10%;
+    width:400px;
+    height:400px;
+    display:none;
+    background:white;
+    border:1px solid #8590a6;
+    border-radius:10px;
+}
+
+.editaccount h2{
+    padding-top:20px;
+    padding-left:20px;
+}
+
+.editaccount p{
+    color:#8590a6;
+    padding-left:20px;
+}
+
+.settingnote h2{
+    padding-top:20px;
+    padding-left:20px;
+}
+
+.settingnote p{
+    color:#8590a6;
+    padding-left:20px;
+}
+
+.emptyerr{
+    padding-left:50px;
+    display:none;
+    color:red;
+    font-size:12px;
+    font-weight:normal;
+}
+
+.input{
+    margin-left:50px;
+    width: 300px;            
+    height: 40px;            
+    color: black;                      
+    text-indent: 2em;                      
+    margin-top:30px;  
+    border:0;                   
+    border-bottom:1px solid #ebebeb; 
+}
+
+.graydiv{
+    z-index:9999;
+    position:fixed;
+    width:100%;
+    background:black;
+    height:100%;
+    display:none;
+    opacity: 0.3;
+}
+
+.editaccountforget1{
+    position:absolute;
+    z-index:10000;
+    margin-left:15%;
+    width:400px;
+    height:400px;
+    display:block;
+    background:white;
+    border-radius:10px;
+}
+
+.editaccountforget1 h2{
+    padding-top:20px;
+    padding-left:20px;
+}
+
+.editaccountforget1 p{
+    color:#8590a6;
+    padding-left:20px;
+}
+
+.editaccountforget2{
+    position:absolute;
+    z-index:10000;
+    margin-left:15%;
+    width:400px;
+    height:400px;
+    display:none;
+    background:white;
+    border-radius:10px;
+}
+
+.editaccountforget2 h2{
+    padding-top:20px;
+    padding-left:20px;
+}
+
+.editaccountforget2 p{
+    color:#8590a6;
+    padding-left:20px;
+}
+
+#js_logo_img{
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    opacity: 0;
+}

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人主页</title>
+    <link rel="stylesheet" href="校庆CSS.css">
+    <link rel="stylesheet" href="登录后.css">
+    <link rel="stylesheet" href="内容交互.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="Sticky">
+            <div class="AppHeader-inner Sticky">
+                <span id="logoFont">个人信息</span>
+                <nav class="AppHeader-nav">
+                    <a href="登录后.html" class="AppHeader-navItem is-active">首页</a>
+                    <a href="#" class="AppHeader-navItem">话题</a>
+                    <a href="#" class="AppHeader-navItem">等你来答</a>
+                </nav>
+                <div class="SearchBar">
+                    <form class="SearchBar-tool">
+                        <div class="Popover">
+                            <input type="text" placeholder="搜索你感兴趣的内容…" class="Input"/>
+                            <button type="button" class="SearchButton">搜索</button>
+                        </div>
+                    </form>
+                    <button type="button" class="AskButton">提问</button>
+                </div>
+                <div class="userinfo">
+                    <button class="imgButton" id="imgButton" onClick="displayinfo()" onDblclick="NOTdisplayinfo()"></button>
+                    <!-- <span id="mainusername">用户名</span> -->
+                    <ul>
+                        <div class="secondnavi" id="secondnavi">
+                            <li><a href="个人主页.html"><div class="secondnavi-container"><label>我的主页</label></div></a></li>
+                            <li><a href="设置.html"><div class="secondnavi-container"><label>设置</label></div></a></li>
+                            <li><a href="深圳大学40周年校庆.html"><div class="secondnavi-container"><label>注销</label></div></a></li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div>
+            <div class="headimg" id="user_avatar" class="user_avatar"><input type="file" accept="image/*" id="js_logo_img" class="logo-img-add"></div>
+            <div class="mainbackground1"></div>
+            <div class="mainbackground2">
+                <h2 id="mainusername">用户名</h2>
+                <div class="buttonground">
+                    <button class="infobutton" id="infobutton" onClick="toedit()" onDblclick="tomainpage()">编辑个人资料</button>
+                </div>
+            </div>
+        </div>
+        <div class="displaypart" id="displaypart">
+            <div class="displaypart-container">
+                <div class="displaypart-containerinnerleft"><h2>用户名</h2></div>
+                <div class="displaypart-containerinner"><h3 id="infousername">111</h3></div>
+            </div>
+            <div class="displaypart-container">
+                <div class="displaypart-containerinnerleft"><h2>手机号码</h2></div>
+                <div class="displaypart-containerinner"><h3 id="infophone">222</h3></div>
+            </div>
+            <div class="displaypart-container">
+                <div class="displaypart-containerinnerleft"><h2>一句话介绍自己</h2></div>
+                <div class="displaypart-containerinner"><h3 id="infoinfo">333</h3></div>
+            </div>
+            <div class="displaypart-container">
+                <div class="displaypart-containerinnerleft"><h2>所在学校</h2></div>
+                <div class="displaypart-containerinner"><h3 id="infoschool">444</h3></div>
+            </div>
+            <div class="displaypart-container">
+                <div class="displaypart-containerinnerleft"><h2>所在专业</h2></div>
+                <div class="displaypart-containerinner"><h3 id="infoprofess">555</h3></div>
+            </div>
+            <div class="displaypart-container">
+                <div class="displaypart-containerinnerleft"><h2>生日</h2></div>
+                <div class="displaypart-containerinner"><h3 id="infobirth">666</h3></div>
+            </div>
+        </div>
+        <div class="editpart" id="editpart">
+            <form id="editpartform">
+                <div class="displaypart-container">
+                    <div class="displaypart-containerinnerleft"><h2>用户名</h2></div>
+                    <div class="displaypart-containerinner"><input class="editpartinput" id="editinfousername" type="text"></input></div>
+                </div>
+                <div class="displaypart-container">
+                    <div class="displaypart-containerinnerleft"><h2>手机号码</h2></div>
+                    <div class="displaypart-containerinner"><input class="editpartinput" id="editinfophone" type="text"></input></div>
+                </div>
+                <div class="displaypart-container">
+                    <div class="displaypart-containerinnerleft"><h2>一句话介绍自己</h2></div>
+                    <div class="displaypart-containerinner"><input class="editpartinput" id="editinfoinfo" type="text"></input></div>
+                </div>
+                <div class="displaypart-container">
+                    <div class="displaypart-containerinnerleft"><h2>所在学校</h2></div>
+                    <div class="displaypart-containerinner"><input class="editpartinput" id="editinfoschool" type="text"></input></div>
+                </div>
+                <div class="displaypart-container">
+                    <div class="displaypart-containerinnerleft"><h2>所在专业</h2></div>
+                    <div class="displaypart-containerinner"><input class="editpartinput" id="editinfoprofess" type="text"></input></div>
+                </div>
+                <div class="displaypart-container">
+                    <div class="displaypart-containerinnerleft"><h2>生日</h2></div>
+                    <div class="displaypart-containerinnerlast"><input class="editpartinput" id="editinfobirth" type="text"></input></div>
+                    <div class="displaypart-containerinnerright"><input class="submitbutton" onClick="editdata()" type="submit" value="保存"></input></div>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="site-footer--container">
+            <nav class="site-footer--nav">
+                <img src="img/logo.png" width="200px" height="100px">
+                <div class="site-footer-col">
+                    <h5>制作团队</h5>
+                    <ul>
+                        <li>王梓淯</li>
+						<li>黄亚中</li>
+						<li>谭嘉豪</li>
+                    </ul>
+                </div>
+                <div class="site-footer-col">
+                    <h5>联系我们</h5>
+                    <ul>
+                        <li>Telephone</li>
+                        <li>Email</li>
+                        <li>Address</li>
+                    </ul>
+                </div>
+                <div class="site-footer-col">
+                    <h5>其他</h5>
+                    <ul>
+                        <li>隐私政策</li>
+                        <li>服务条款</li>
+                        <li>版权</li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </footer>
+    <script type="text/javascript" src="登录后.js"></script>
+</body>
+</html>

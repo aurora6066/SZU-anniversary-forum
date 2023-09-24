@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh" data-hairline="true" data-theme="light">
+<head>
+	<meta charset="utf-8"/>
+	<title>首页-登录后</title>
+	<link rel="stylesheet" href="校庆CSS.css">
+    <link rel="stylesheet" href="登录后.css">
+	<link rel="stylesheet" href="内容交互.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap" rel="stylesheet">
+</head>
+<body style="overflow:auto">
+<div class="graydiv" id="graydiv"></div>
+<header>
+	<div class="Sticky">
+		<div class="AppHeader-inner Sticky">
+			<img src="img/logo.png" width="120px" height="60px">
+			<nav class="AppHeader-nav">
+				<a href="#" class="AppHeader-navItem is-active">首页</a>
+				<a href="#" class="AppHeader-navItem">荔园影像</a>
+				<a href="#" class="AppHeader-navItem">活动预告</a>
+			</nav>
+			<div class="SearchBar">
+				<form class="SearchBar-tool">
+					<div class="Popover">
+						<input type="text" placeholder="搜索你感兴趣的内容…" class="Input" id="search"/>
+						<button type="button" class="SearchButton" onclick="searchque()">搜索</button>
+					</div>
+				</form>
+			</div>
+			<div class="AppHeader-userInfo">
+				<a href="" class="bt_content">
+					<img src="img/bt_content.png">
+					内容发布
+				</a>
+			</div>
+			<div class="userinfo">
+                <button class="imgButton" id="imgButton" onClick="displayinfo()" onDblclick="NOTdisplayinfo()"></button>
+				<span id="mainusername"></span>
+                <ul>
+                    <div class="secondnavi" id="secondnavi">
+                        <li><a href="个人主页.html"><div class="secondnavi-container"><label>我的主页</label></div></a></li>
+                        <li><a href="设置.html"><div class="secondnavi-container"><label>设置</label></div></a></li>
+                        <li><a href="深圳大学40周年校庆.html"><div class="secondnavi-container"><label>注销</label></div></a></li>
+                    </div>
+                </ul>
+			</div>
+		</div>
+	</div>
+</header>
+<main class="Main">
+	<div class="container">
+		<div class="left-container">
+			<div class="left-container--sticky">
+				<nav>
+					<ul class="nav-links">
+						<li><a href="#" class="tui liis-active" onClick="return updateAll()">推荐</a></li>
+						<li><a href="#" class="re" onClick="return initRec()">热门</a></li>
+<!--						<li><a href="#" class="needLogin">登录后使用更多功能</a></li>-->
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<div class="content">
+			<div class="mainBar">
+				<div class="questionBlock" id="questionblock1">
+					<textarea class="question-content" id="question-text" type="text" placeholder="写下你的问题，准确地描述问题更容易得到解答" onBlur="return checkquestion()"></textarea><br>
+					<button class="question-button" onClick="return toeditquestion()">提交</button>
+					<button class="question-button" onClick="return tocancelquestion()">取消</button>
+					<span class="eptquestion" id="eptquestion" >问题不能为空</span>
+				</div>
+				<div class="commentBlock" id="commentBlock1">
+					<textarea class="question-content" id="comment-text" type="text" placeholder="请写下您的评论" onBlur="return checkComment()"></textarea><br>
+					<button class="question-button" onClick="return toAddComment()">提交</button>
+					<button class="question-button" onClick="return tocancelcomment()">取消</button>
+					<span class="eptquestion" id="eptcomment" >评论不能为空</span>
+				</div>
+				<div class="replyBlock" id="replyBlock1">
+					<textarea class="question-content" id="reply-text" type="text" placeholder="为了维护良好的网络环境，请友善的进行回复" onBlur="return checkReply()"></textarea><br>
+					<button class="question-button" onClick="return toAddReply()">提交</button>
+					<button class="question-button" onClick="return tocancelreply()">取消</button>
+					<span class="eptquestion" id="eptreply" >回复不能为空</span>
+				</div>
+				<div class="question" id="question1">
+				</div>
+				<div class="pages">
+					<div class="pageItem is--selected">
+						<span>1</span>
+					</div>
+					<a href="#" class="pageItem">
+						<span>2</span>
+					</a>
+					<a href="#" class="pageItem">
+						<span>3</span>
+					</a>
+				</div>
+			</div>
+			<div class="sideBar">
+				<div class="announcement">
+					<div class="announcement_content">
+						<h4><span class="gradt">通知公告</span></h4>
+						<div class="announcement-Content">
+							<div class="announcement_block">
+								<a href="">
+									<div class="data">
+										2023-06-08
+									</div>
+									<div class="announcement_head">
+										<h6 class="">关于提供《深圳大学报》校庆40周年特刊“学院建设与发展”专版素材的通知</h6>
+									</div>
+								</a>
+							</div>
+							<div class="announcement_block">
+								<a href="">
+									<div class="data">
+										2023-06-06
+									</div>
+									<div class="announcement_head">
+										<h6 class="">关于公开征集深圳大学40周年校庆主题晚会方案的通知</h6>
+									</div>
+								</a>
+							</div>
+							<div class="announcement_block">
+								<a href="">
+									<div class="data">
+										2023-05-31
+									</div>
+									<div class="announcement_head">
+										<h6 class="">丽湖校区荔枝文化节 | 去摆摊吧，去摆不被定义的摊</h6>
+									</div>
+								</a>
+							</div>
+							<div class="announcement_block">
+								<a href="">
+									<div class="data">
+										2023-05-25
+									</div>
+									<div class="announcement_head">
+										<h6 class="">“以书之名，共续校友情”————深圳大学法学院四十周年校庆校友书籍推荐征集活动</h6>
+									</div>
+								</a>
+							</div>
+
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+<footer class="footer">
+	<div class="site-footer--container">
+		<nav class="site-footer--nav">
+			<div class="site-footer-col">
+				<img src="img/logo.png" width="200px" height="100px">
+			</div>
+			<div class="site-footer-col">
+				<h5>制作团队</h5>
+				<ul>
+					<li>王梓淯</li>
+					<li>黄亚中</li>
+					<li>谭嘉豪</li>
+				</ul>
+			</div>
+			<div class="site-footer-col">
+				<h5>联系我们</h5>
+				<ul>
+					<li>Telephone</li>
+					<li>Email</li>
+					<li>Address</li>
+				</ul>
+			</div>
+			<div class="site-footer-col">
+				<h5>其他</h5>
+				<ul>
+					<li>隐私政策</li>
+					<li>服务条款</li>
+					<li>版权</li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+</footer>
+    <script type="text/javascript" src="登录后.js"></script>
+	<script type="text/javascript" src="内容交互.js"></script>
+</body>
+</html>

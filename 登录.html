@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录 - 注册</title>
+    <link rel="stylesheet" href="登录.css">
+    <link rel="stylesheet" href="校庆CSS.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap" rel="stylesheet">
+</head>
+<body style="overflow:auto" >
+    <main>
+        <div class="SignFlowHomepage">
+            <div class="SignFlowHomepage-content">
+                <span id="logoFont">深大四十年，有你更精彩！</span>
+            </div>
+            <div class="signQr-container">
+                <div class="signQr-leftContainer">
+                    <img src="img/normal.jpeg" class="loginImg">
+                </div>
+                <div class="signQr-rightContainer">
+                    <div class="sign-navi">
+                        <div class="sign-navi-left" id="sign-navi-left" onClick="tologin()">
+                            <label>用户登录</label>
+                        </div>
+                        <div class="sign-navi-right" id="sign-navi-right" onClick="tologon()">
+                            <label>用户注册</label>
+                        </div>             
+                        <div class="sign-login">
+                            <form id="loginsight" onSubmit="return checkreg()">
+                                <fieldset>          
+                                    <span class="emptyerr" id="errmsg" >请检查账号或密码是否正确</span>
+                                    <input type="text" id="username" placeholder="请输入账号" class="input" onBlur="return checklogin()"><br>
+                                    <span class="emptyerr" id="eptusername">账号不得为空</span>
+                                    <input type="password" id="password" placeholder="请输入密码" class="input" onBlur="return checklogin()"><br>
+                                    <span class="emptyerr" id="eptpassword">密码不得为空</span><br>
+                                    <input type="checkbox" id="remember" onclick="rememberconfirm()"><label>记住账号和密码</label><br>
+                                    <a href="忘记密码.html"><p class="forget">忘记密码</p></a><br>
+                                    <input type="submit" id="login" value="登录" class="button">
+                                </fieldset>
+                            </form>
+                            <form id="logonsight" onSubmit="return checklogon()">
+                                <fieldset>
+                                    <h2><strong>账号注册</strong></h2>
+                                    <span class="emptyerr" id="errlogon">该账号已经被注册了</span>
+                                    <input type="text" id="lusername" placeholder="请输入账号" class="input" onBlur="return checklogon()"><br>
+                                    <span class="emptyerr" id="leptusername">账号不得为空</span>
+                                    <span class="emptyerr" id="errname">账号必须为6-20位字母数字组合</span>
+                                    <input type="password" id="lpassword" placeholder="请输入密码" class="input" onBlur="return checklogon()"><br>
+                                    <span class="emptyerr" id="leptpassword">密码不得为空</span>
+                                    <span class="emptyerr" id="errpaswd">密码必须为6-20位</span>
+                                    <input type="phonenum" id="phonenum" placeholder="请输入电话号码" class="input" onBlur="return checklogon()"><br>
+                                    <span class="emptyerr" id="eptphonenum">电话号码不得为空</span>
+                                    <span class="emptyerr" id="errphonenum">请检查手机号码是否输入正确</span>
+                                    <input type="submit" id="logon" value="注册" class="button">
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script type="text/javascript" src="登录.js">
+    </script>
+    <script src="./md5.js"></script>
+</body>
+</html>
